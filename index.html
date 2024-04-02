@@ -55,8 +55,8 @@
     background-repeat: no-repeat;
     background-size: hidden;
     box-shadow: inset 0px 0px 0px 10px white;
-    width: 220px; 
-    height: 220px; 
+    width: 100%;
+
     }
 
 
@@ -79,6 +79,7 @@
     
 }
 .flexContainer{
+    margin-top: 2%;
     display: flex;
 }
 .text{
@@ -178,7 +179,9 @@
                     <h3>Here's a random cat image to brighten up your day!</h3>
                     <img id="photo" src="https://thecatapi.com/api/images/get?format=src&type=gif" class="cat">
                     <br>
+                    <div style="display: flex; justify-content: center; align-items: center;">
                     <button id="btn" class="button-4" >btn</button>
+                </div>
                     <script>
                         var btn = document.querySelector("#btn");
                         var img = document.querySelector("#photo");
@@ -195,13 +198,13 @@
                 <section class="text">
                     <h2>About Me</h2>
                     <p>
-Hello, I'm a student studying software development at Gradia in Jyväskylä. I'm apart of the first year of software developers graduating from vocational school, and I want to prove that a bachelors degree is not a barrier to having strong skills. My studies are soon coming to an end, and my next goal is employment.
-</p>
-<p>
-    I've enjoyed software development since elementary school, where I started taking coding courses simply for fun. This interest stayed through middle school and continued into vocational school, where it became clear to me that this is the field of expertise I want to pursue and what I enjoy. With nearly three years of vocational education behind me, securing a job at this state of my carreer would be a dream.
-</p>
-<p>
-If you're looking for a dedicated employee, please don't hesitate to get in touch!
+                    Hello, I'm a student studying software development at Gradia in Jyväskylä. I'm apart of the first year of software developers graduating from vocational school, and I want to prove that a bachelors degree is not a barrier to having strong skills. My studies are soon coming to an end, and my next goal is employment.
+                    </p>
+                    <p>
+                    I've enjoyed software development since elementary school, where I started taking coding courses simply for fun. This interest stayed through middle school and continued into vocational school, where it became clear to me that this is the field of expertise I want to pursue and what I enjoy. With nearly three years of vocational education behind me, securing a job at this state of my carreer would be a dream.
+                    </p>
+                    <p>
+                    If you're looking for a dedicated employee, please don't hesitate to get in touch!
                     </p>
                 </section>
                 <section  class="text">
@@ -210,6 +213,10 @@ If you're looking for a dedicated employee, please don't hesitate to get in touc
                     <strong>Tester/Fullstack Developer (Internship)</strong><br>
                     Heeros Oyj - 2023-Present<br>
                     Responsibilities include manual testing, automation testing, front-end programming, backend bug fixing, and collaborating with designers.
+                    </p>
+                    <strong>Fullstack Developer (Internship)</strong><br>
+                    Exen Esports - 2022-2023<br>
+                    Responsibilities included making a site where you can reserve the bootcamp space. This was not deployed.
                     </p>
                 </section>
                 <section  class="text">
