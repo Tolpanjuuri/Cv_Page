@@ -18,16 +18,21 @@
         }
         
         
-        .upperDiv {
-            overflow: hidden;
-            height: 20vw;
-            background-image:  linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877), linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877);
-            background-size: 80px 140px;
-            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-            background-attachment: fixed;
-            background-size: cover;
+.upperDiv {
+    overflow: hidden;
+    height: 20vw;
+    background-image: linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877), linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-attachment: fixed;
+}
 
-        }
+@media only screen and (max-width: 600px) {
+    .upperDiv {
+        background-size: 40px 70px; /* Adjust as needed */
+        height: auto; /* Adjust the height as needed or remove it to make it adapt to content */
+    }
+}
 
         h1, h2, h3 {
             color: #333;
