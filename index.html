@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - CV</title>
     <style>
-        body {
-            animation: fadeInAnimation ease 1s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height:50vw;
-            background-color: #fdeefe;
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 50vw;
+    background-color: #fdeefe;
+}
 
-        }
-        
-        
 .upperDiv {
     overflow: hidden;
     height: 20vw;
-    background-image: linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877), linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877);
+    background-image: linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877), 
+                      linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877);
     background-size: 80px 140px;
     background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
     background-attachment: fixed;
@@ -34,44 +37,43 @@
     }
 }
 
-        h1, h2, h3 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-        }
-        @keyframes fadeInAnimation {
-         0% {
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@keyframes fadeInAnimation {
+    0% {
         opacity: 0;
-       }
-        100% {
+    }
+    100% {
         opacity: 1; 
-      }
-        }
+    }
+}
 
-
-    .myFace {
+.profilePicture {
     background-repeat: no-repeat;
     background-size: cover;
     border: solid 5px white;
     box-shadow: inset 0px 0px 0px 10px white;
     width: 300px;
     height: 300px;
-    }
-    .cat {
+}
+
+.cat {
     background-repeat: no-repeat;
     background-size: hidden;
     box-shadow: inset 0px 0px 0px 10px white;
     width: 100%;
+}
 
-    }
-
-
-    .image-stack {
+.image-stack {
     display: flex;
     flex-direction: column;
-    }
-
+}
 
 .textboxLeft {
     margin-top: 5vw;
@@ -83,79 +85,119 @@
 .textboxRight {
     width: 73%;
     margin-right: 2%;
-    
 }
-.flexContainer{
+
+.flexContainer {
     margin-top: 2%;
     display: flex;
 }
-.text{
-    background-color: #fdeefe; /* Set background color */
-    border-radius: 5px; /* Adjust the radius to control the roundness of corners */
-    border: 2px solid #ccc; /* Add a border for better visibility */
+
+.text {
+    background-color: #fdeefe;
+    border-radius: 5px; 
+    border: 2px solid #ccc; 
     margin-top: 5px;
     padding: 10px;
     box-shadow: 5px 2px 2px gray;
-    }
-.pp{
+}
+
+.picture {
     margin-top: -9vw;
 }
 
 .button-4 {
-  appearance: none;
-  background-color: #FAFBFC;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
-  color: #24292E;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  padding: 6px 16px;
-  position: relative;
-  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
 }
 
 .button-4:hover {
-  background-color: #F3F4F6;
-  text-decoration: none;
-  transition-duration: 0.1s;
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
 }
 
 .button-4:disabled {
-  background-color: #FAFBFC;
-  border-color: rgba(27, 31, 35, 0.15);
-  color: #959DA5;
-  cursor: default;
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
 }
 
 .button-4:active {
-  background-color: #EDEFF2;
-  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
-  transition: none 0s;
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
 }
 
 .button-4:focus {
-  outline: 1px transparent;
+    outline: 1px transparent;
 }
 
 .button-4:before {
-  display: none;
+    display: none;
 }
 
 .button-4:-webkit-details-marker {
-  display: none;
+    display: none;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+#loading-bar-spinner.spinner {
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 19 !important;
+    animation: loading-bar-spinner 400ms linear infinite;
+}
+
+#loading-bar-spinner.spinner .spinner-icon {
+    width: 40px;
+    height: 40px;
+    border: solid 4px transparent;
+    border-top-color:  #00C8B1 !important;
+    border-left-color: #00C8B1 !important;
+    border-radius: 50%;
+}
+
+@keyframes loading-bar-spinner {
+    0%   { transform: rotate(0deg);   transform: rotate(0deg); }
+    100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+th, td {
+    padding-right: 60px;
 }
 
 </style>
@@ -169,10 +211,10 @@
         </div>
             <div class="flexContainer">
                 <div class="textboxLeft">
-                <div class="pp">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQEjTj5bf30ocQ/profile-displayphoto-shrink_200_200/0/1710500261846?e=2147483647&v=beta&t=dQbd1fh-dPTWysTNWl45KqYydlipxzZPETmyLZE5_1Q" class="myFace">
+                <div class="picture">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQEjTj5bf30ocQ/profile-displayphoto-shrink_200_200/0/1710500261846?e=2147483647&v=beta&t=dQbd1fh-dPTWysTNWl45KqYydlipxzZPETmyLZE5_1Q" class="profilePicture">
                     <h1>Tomi Vahdersalo</h1>
-                    <p>Ohjelmistokehittäjä</p>
+                    <p>Software Developer Trainee</p>
                 </div>
 
                 <section  class="text">
@@ -183,11 +225,11 @@
                     <p>LinkedIn: <a href="https://www.linkedin.com/in/tomi-vahdersalo-75900b26b/">Tomi Vahdersalo</a></p>
                 </section>
                 <section  class="text">
-                    <h3>Here's a random cat image to brighten up your day!</h3>
+                    <h3>Here's a random cat to brighten up your day!</h3>
                     <img id="photo" src="https://thecatapi.com/api/images/get?format=src&type=gif" class="cat">
                     <br>
                     <div style="display: flex; justify-content: center; align-items: center;">
-                    <button id="btn" class="button-4" >btn</button>
+                    <button id="btn" class="button-4">New cat!</button>
                 </div>
                     <script>
                         var btn = document.querySelector("#btn");
@@ -208,7 +250,7 @@
                     Hello, I'm a student studying software development at Gradia in Jyväskylä. I'm apart of the first year of software developers graduating from vocational school, and I want to prove that a bachelors degree is not a barrier to having strong skills. My studies are soon coming to an end, and my next goal is employment.
                     </p>
                     <p>
-                    I've enjoyed software development since elementary school, where I started taking coding courses simply for fun. This interest stayed through middle school and continued into vocational school, where it became clear to me that this is the field of expertise I want to pursue and what I enjoy. With nearly three years of vocational education behind me, securing a job at this state of my carreer would be a dream.
+                    I've enjoyed software development since elementary school, where I started taking coding courses simply for fun. This interest stayed through middle school and continued into vocational school, where it became clear to me that this is the field of expertise I want to pursue and what I enjoy. With nearly three years of vocational education behind me and some courses done from the Jamk University of Applied Sciences, securing a job at this state of my career would be a dream.
                     </p>
                     <p>
                     If you're looking for a dedicated employee, please don't hesitate to get in touch!
@@ -219,7 +261,7 @@
                     <p>
                     <strong>Tester/Fullstack Developer (Internship)</strong><br>
                     Heeros Oyj - 2023-Present<br>
-                    Responsibilities include manual testing, automation testing, front-end programming, backend bug fixing, and collaborating with designers.
+                    Responsibilities include manual testing, automation testing, front-end and backend bug fixing, and collaborating with designers.
                     </p>
                     <strong>Fullstack Developer (Internship)</strong><br>
                     Exen Esports - 2022-2023<br>
@@ -236,18 +278,25 @@
                 </p>
                 </section>
                 <section  class="text">
-                    <h2>Contact</h2>
-                    <p>Email: youremail@example.com</p>
-                    <p>Phone: 123-456-7890</p>
-                    <p>Website: <a href="http://www.yourwebsite.com">www.yourwebsite.com</a></p>
-                    <p>LinkedIn: <a href="http://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-                </section>
-                <section  class="text">
-                    <h2>Contact</h2>
-                    <p>Email: youremail@example.com</p>
-                    <p>Phone: 123-456-7890</p>
-                    <p>Website: <a href="http://www.yourwebsite.com">www.yourwebsite.com</a></p>
-                    <p>LinkedIn: <a href="http://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+                    <h2>Current Skills</h2>
+                    <table>
+                    <td>
+                    <p><strong>Currently using</strong></p>
+                    <p>JavaScript</a></p>
+                    <p>PHP</a></p>
+                    </td>
+                    <td>
+                    <p><strong>University basics</strong></p>
+                    <p>Python</p>
+                    <p>Databases</p>
+                    </td>
+                    <td>
+                    <p><strong>Vocational Basics</strong></p>
+                    <p>C#</a></p>
+                    <p>Css, Html</a></p>
+                    </td>
+                </table>
+
                 </section>
             </div>
         </div>
