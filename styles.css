@@ -1,0 +1,195 @@
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 50vw;
+    background-color: #fdeefe;
+}
+
+.upperDiv {
+    overflow: hidden;
+    height: 20vw;
+    background-image: linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(30deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(150deg, #3b4398 12%, transparent 12.5%, transparent 87%, #3b4398 87.5%, #3b4398), 
+                      linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877), 
+                      linear-gradient(60deg, #3b439877 25%, transparent 25.5%, transparent 75%, #3b439877 75%, #3b439877);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .upperDiv {
+        background-size: 40px 70px; 
+        height: auto; 
+    }
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+.profilePicture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 5px white;
+    box-shadow: inset 0px 0px 0px 10px white;
+    width: 300px;
+    height: 300px;
+}
+
+.cat {
+    background-repeat: no-repeat;
+    background-size: hidden;
+    box-shadow: inset 0px 0px 0px 10px white;
+    width: 100%;
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.textboxLeft {
+    margin-top: 5vw;
+    width: 300px;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+.textboxRight {
+    width: 73%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.flexContainer {
+    margin-top: 2%;
+    display: flex;
+}
+
+.text {
+    background-color: #fdeefe;
+    border-radius: 5px; 
+    border: 2px solid #ccc; 
+    margin-top: 5px;
+    padding: 10px;
+    box-shadow: 5px 2px 2px gray;
+}
+
+.picture {
+    margin-top: -9vw;
+}
+
+.button-4 {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.button-4:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+}
+
+.button-4:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+.button-4:focus {
+    outline: 1px transparent;
+}
+
+.button-4:before {
+    display: none;
+}
+
+.button-4:-webkit-details-marker {
+    display: none;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+#loading-bar-spinner.spinner {
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 19 !important;
+    animation: loading-bar-spinner 400ms linear infinite;
+}
+
+#loading-bar-spinner.spinner .spinner-icon {
+    width: 40px;
+    height: 40px;
+    border: solid 4px transparent;
+    border-top-color:  #00C8B1 !important;
+    border-left-color: #00C8B1 !important;
+    border-radius: 50%;
+}
+
+@keyframes loading-bar-spinner {
+    0%   { transform: rotate(0deg);   transform: rotate(0deg); }
+    100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+th, td {
+    padding-right: 60px;
+}
