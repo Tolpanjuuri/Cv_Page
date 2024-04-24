@@ -48,12 +48,11 @@ p {
 }
 
 .profilePicture {
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
     border: solid 5px white;
     box-shadow: inset 0px 0px 0px 10px white;
     width: 300px;
-    height: 300px;
+    height: 350px;
 }
 
 .cat {
